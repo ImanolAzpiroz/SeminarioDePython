@@ -1,2 +1,2 @@
 # SeminarioDePython
-Teoria y Practica de la materia
+Imanol Azpiroz 19815/2
