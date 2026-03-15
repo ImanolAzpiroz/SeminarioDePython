@@ -41,7 +41,7 @@ while attempts > 0:
 
     # Validar que el input sea una sola letra y no un número o símbolo
     if len(user_input) != 1 or not user_input.isalpha():
-        print("Por favor, ingresá una sola letra.")
+        print("Entrada no valida")
         continue
 
     if user_input in guessed:
