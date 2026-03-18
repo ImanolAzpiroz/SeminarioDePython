@@ -24,12 +24,15 @@ for i, category in enumerate(words_dic.keys(), 1):
 
 category_choice = int(input())
 
-# Seleccionar una palabra aleatoria de la categoría elegida:
-# Se debe convertir en lista para acceder a las claves por indice
-# List(words_dic.keys()) devuelve una lista de claves y [category_choice - 1] es el indice
-# Luego con la clave accede al diccionario y hace la seleccion random
-# print(words_dic[list(words_dic.keys())[category_choice - 1]])           # (Esto mostraria una de las listas)
-word = random.choice(words_dic[list(words_dic.keys())[category_choice - 1]])
+# (Lo hice de nuevo por que no me quedo claro del todo)
+# Lista de categorias:
+categories = list(words_dic.keys())
+# Con el indice ingresado accedemos a la categoria elegiad
+cat_elegida = categories[category_choice - 1]
+# Ahora el indice es un str, y podemos acceder al diccionario para obtener la palabra a adivinar, sobre eso hacemos el random
+word = random.choice(words_dic[cat_elegida])
+
+print(f"La categoria elegida es: {cat_elegida}")
 
 while attempts > 0:
 # Mostrar progreso: letras adivinadas y guiones para las que faltan
