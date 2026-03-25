@@ -1,8 +1,6 @@
 import random
 
 
-
-# Nota
 print(f"Nota: Podria haber modularizado. \U0001F616")
 
 words_dic = {
